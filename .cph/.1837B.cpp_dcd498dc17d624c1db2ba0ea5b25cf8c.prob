@@ -1,0 +1,1 @@
+{"name":"Local: 1837B","url":"d:\\Study\\Programs\\CP\\1837B.cpp","tests":[{"id":1742834990190,"input":"4\n4\n<<>>\n4\n>><<\n5\n>>>>>\n7\n<><><><\n","output":"3\n3\n6\n2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Study\\Programs\\CP\\1837B.cpp","group":"local","local":true}
