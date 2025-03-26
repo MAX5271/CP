@@ -1,0 +1,1 @@
+{"name":"Local: 1373B","url":"d:\\Study\\Programs\\CP\\1373B.cpp","tests":[{"id":1743021482475,"input":"3\n01\n1111\n0011\n","output":"DA\nNET\nNET\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Study\\Programs\\CP\\1373B.cpp","group":"local","local":true}
