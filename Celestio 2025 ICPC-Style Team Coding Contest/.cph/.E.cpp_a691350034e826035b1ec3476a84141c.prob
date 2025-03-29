@@ -1,0 +1,1 @@
+{"name":"Local: E","url":"d:\\Study\\Programs\\CP\\Celestio 2025 ICPC-Style Team Coding Contest\\E.cpp","tests":[{"id":1743248328388,"input":"4\n01\n1010101010111\n00110001000\n1\n","output":"0\n5\n3\n0\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Study\\Programs\\CP\\Celestio 2025 ICPC-Style Team Coding Contest\\E.cpp","group":"local","local":true}
