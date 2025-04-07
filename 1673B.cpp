@@ -105,14 +105,25 @@ int gcd(int a, int b) {
 
 void solve()
 {
-    int n;
-    cin>>n;
-    vector<int> a(n);
-    for(int i=0;i<n;i++) cin>>a[i];
-    int x=pow(2,33)-1;
-    for(int i=0;i<n;i++)
-    if(a[i]!=i) x=x&a[i];
-    cout<<x<<endl;
+    string s,s1;
+    cin>>s;
+    map<char,int> a;
+    for(int i=0;i<s.length();i++)
+    {
+        a[s[i]]++;
+        if(a[s[i]]!=2){
+            s1.push_back(s[i]);
+        }
+        else break;
+    }
+    bool flag = true;
+    for(int i=0;i<s.length();i++){
+        if(s[i]!=s1[i%s1.length()]){
+            flag=false;
+            break;
+        }
+    }
+    if(flag) cy else cn
 }
 
 int32_t main()

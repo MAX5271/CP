@@ -1,0 +1,1 @@
+{"name":"Local: 1673B","url":"d:\\Study\\Programs\\CP\\1673B.cpp","tests":[{"id":1744052680286,"input":"5\naba\nabb\nabc\naaaaa\nabcba\n","output":"YES\nNO\nYES\nYES\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Study\\Programs\\CP\\1673B.cpp","group":"local","local":true}
