@@ -109,35 +109,27 @@ void input(vector<int>&a){
 
 void solve()
 {
-    int n,m,k;
-    cin>>n>>m>>k;
-    if(m%k==0){
-        int n1=1;
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(i&1){
-                    cout<<(n1)%(k)+1<<" ";
-                    n1++;
-                    if(n1>k) n1=1;
-                }else{
-                    cout<<n1<<" ";
-                    n1++;
-                    if(n1>k) n1=1;
-                }
-            }
-            cout<<endl;
-        }
-    }else{
-        int n1=1;
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                cout<<n1<<" ";
-                n1++;
-                if(n1>k) n1=1;
-            }
-            cout<<endl;
+    int n;
+    cin>>n;
+    vector<int> a(n);
+    input(a);
+    for(int i=0;i<n;i++){
+        int x;
+        cin>>x;
+        a[i]=x-a[i];
+    }
+    sort(all(a));
+    int ans=0,start=0,end=n-1;
+    while(start<end){
+        if(a[start]+a[end]>=0) {
+            ans++;
+            start++;
+            end--;
+        }else{
+            start++;
         }
     }
+    cout<<ans<<endl;
 }
 
 int32_t main()
