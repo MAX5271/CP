@@ -1,0 +1,1 @@
+{"name":"Local: 1541B","url":"d:\\Study\\Programs\\CP\\1541B.cpp","tests":[{"id":1744901274811,"input":"3\n2\n3 1\n3\n6 1 5\n5\n3 1 5 9 2\n","output":"1\n1\n3\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Study\\Programs\\CP\\1541B.cpp","group":"local","local":true}
