@@ -157,13 +157,14 @@ void solve()
     }
     if (count)
         a.push_back(count);
-    cout << accumulate(all(a), 0ll);
-    int p = 1;
-    for (int i = 0; i < a.size(); i++)
-    {
-        p = ((p ) * (fact[a[i]+1] )) % MOD;
+    cout << accumulate(all(a), 0ll)<<" ";
+    int sum=0,tbr=accumulate(all(a),0ll);
+    int p=1;
+    for(int i=0;i<a.size();i++){
+        p=(p*(a[i]+1))%MOD;
     }
-    cout << " " << (p*a.size())%MOD << endl;
+    p=(p*fact[tbr])%MOD;
+    cout<<((p==0)?1:p)<<endl;
 }
 
 int32_t main()
