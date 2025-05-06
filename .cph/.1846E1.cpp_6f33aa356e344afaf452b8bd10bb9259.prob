@@ -1,0 +1,1 @@
+{"name":"Local: 1846E1","url":"d:\\Study\\Programs\\CP\\1846E1.cpp","tests":[{"id":1746565370026,"input":"9\n1\n2\n3\n6\n13\n15\n255\n10101\n1000000\n","output":"NO\nNO\nNO\nNO\nYES\nYES\nYES\nYES\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Study\\Programs\\CP\\1846E1.cpp","group":"local","local":true}
