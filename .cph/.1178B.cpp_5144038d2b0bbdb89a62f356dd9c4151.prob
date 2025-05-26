@@ -1,0 +1,1 @@
+{"name":"Local: 1178B","url":"d:\\Study\\Programs\\CP\\1178B.cpp","tests":[{"id":1748026388972,"input":"vvovooovovvovoovoovvvvovovvvov\n","output":"100"},{"id":1748029101046,"input":"vvovvovvovvovv","output":"20"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Study\\Programs\\CP\\1178B.cpp","group":"local","local":true}
