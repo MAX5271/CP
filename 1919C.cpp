@@ -136,7 +136,7 @@ void solve()
     for (int i = 0; i < n; i++)
     {
         int c1 = (t1.size() == 0) ? INT_MAX : t1.back(), c2 = (t2.size() == 0) ? INT_MAX : t2.back();
-        if (a[i] < c1 && a[i] < c2 || a[i] > c1 && a[i] > c2)
+        if (a[i] <= c1 && a[i] <= c2 || a[i] > c1 && a[i] > c2)
         {
             if (c1 < c2)
                 t1.push_back(a[i]);
