@@ -116,7 +116,42 @@ void calp2(){
 
 void solve()
 {
-    
+    int n,m;
+    cin>>n>>m;
+    vector<vector<int>> a(n,vector<int>(m));
+    for(int i=0;i<n;i++)
+    input(a[i]);
+    map<int,vector<int>> r,c;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            r[a[i][j]].push_back(i);
+            c[a[i][j]].push_back(j);
+        }
+    }
+    int ans=0;
+    for(auto it=r.begin();it!=r.end();it++){
+        vector<int> temp(it->second.begin(),it->second.end());
+        sort(all(temp),greater<>());
+        int s=temp.size()-1;
+        if(temp.size()!=1){
+            for(int i=0;i<temp.size();i++){
+                ans+=s*temp[i];
+                s-=2;
+            }
+        }
+    }
+    for(auto it=c.begin();it!=c.end();it++){
+        vector<int> temp(it->second.begin(),it->second.end());
+        sort(all(temp),greater<>());
+        int s=temp.size()-1;
+        if(temp.size()!=1){
+            for(int i=0;i<temp.size();i++){
+                ans+=s*temp[i];
+                s-=2;
+            }
+        }
+    }
+    cout<<ans<<endl;
 }
 
 int32_t main()
@@ -125,8 +160,8 @@ int32_t main()
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    int t;
-    cin >> t;
+    int t=1;
+    // cin >> t;
     while (t--)
     {
         solve();
