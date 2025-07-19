@@ -1,0 +1,1 @@
+{"name":"Local: 1634B","url":"e:\\Study\\Programs\\CP\\1634B.cpp","tests":[{"id":1752669129467,"input":"4\n1 7 9\n2\n2 0 2\n1 3\n4 0 1\n1 2 3 4\n2 1000000000 3000000000\n1000000000 1000000000\n","output":"Alice\r\nAlice\r\nBob\r\nAlice\r\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Study\\Programs\\CP\\1634B.cpp","group":"local","local":true}
