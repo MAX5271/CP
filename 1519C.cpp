@@ -122,7 +122,7 @@ void solve()
 {
     int n;
     cin>>n;
-    vector<pair<int,int>> a;
+    vector<pair<int,int>> a(n);
     for(int i=0;i<n;i++){
         cin>>a[i].first;
     }
@@ -130,7 +130,33 @@ void solve()
         cin>>a[i].second;
     }
     sort(all(a));
+    int s1=-1;
+    vector<vector<int>> b;
+    for(int i=n-1;i>-1;i--){
+         vector<int> temp;
+         int sum=0;
+         while(i>0&&a[i].first==a[i-1].first){
+            sum+=a[i].second;
+            temp.push_back(sum);
+            i--;
+         }
+        sum+=a[i].second;
+        temp.push_back(sum);
+        s1=max(s1,(int)temp.size());
+        b.push_back(temp);
+    }
+    vector<int> ans(n,0);
     
+    for(int i=0;i<b.size();i++){
+        for(int j=0;j<b[i].size();j++){
+            int si=j+1;
+            // cout<<b[i].size()<<endl;
+            ans[j]+=b[i][b[i].size()/si * si - 1];
+            // cout<<b[i][j]<<" ";
+        }
+        // cout<<endl;
+    }
+    print(ans);
 }
 
 int32_t main()
