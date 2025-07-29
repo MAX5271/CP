@@ -126,6 +126,11 @@ void solve()
     input(a);
     sort(all(a));
     int ans=0,x=0;
+    if(n==1){
+        if(a[0]%k==0) cout<<0<<endl;
+        else cout<<(k-a[0]%k+1)<<endl;
+        return;
+    }
     // b.push_back(k-a[0]%k);
     for(int i=0;i<n;i++){
         if(a[i]%k==0) b.push_back(0);
@@ -149,7 +154,7 @@ void solve()
     }
     // print(c);
     if(*max_element(all(c))!=0)
-    cout<<*max_element(all(c))+1ll<<endl;
+    cout<<(*max_element(all(c))+1ll)<<endl;
     else cout<<0<<endl;
 }
 
