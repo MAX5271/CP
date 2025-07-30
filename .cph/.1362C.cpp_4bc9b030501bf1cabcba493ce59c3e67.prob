@@ -1,0 +1,1 @@
+{"name":"Local: 1362C","url":"e:\\Study\\Programs\\CP\\1362C.cpp","tests":[{"id":1753883372633,"input":"5\n5\n7\n11\n1\n2000000000000\n","output":"8\r\n11\r\n19\r\n1\r\n3999999999987\r\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Study\\Programs\\CP\\1362C.cpp","group":"local","local":true}
