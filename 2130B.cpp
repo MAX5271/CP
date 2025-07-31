@@ -118,30 +118,45 @@ void input(vector<int> &a)
         cin >> a[i];
 }
 
-vector<int> dp(1e5+2,-1);
-
-int cal(vector<int>& a,int i,int j){
-    
-    if(i<1||i==1&&a[i]>=a[j]) return 0;
-    if(i==1&&a[i]<a[j]) return 1;
-    if(dp[j]!=-1) return dp[j];
-    if(j%i==0&&a[j-1]>a[i-1]||i==j)
-    return dp[j]=cal(a,i-1,j)+1;
-    else return dp[j]=cal(a,i-1,j);
-}
-
 void solve()
 {
-    int n;
-    cin>>n;
+    int n,s;
+    cin>>n>>s;
     vector<int> a(n);
     input(a);
-    if(n==1){
-        cout<<1<<endl;
+    int sum=0;
+    int c0=0,c1=0,c2=0;
+    for(int i=0;i<n;i++){
+        if(a[i]==1) c1++;
+        else if(a[i]==0) c0++;
+        else c2++;
+        sum+=a[i];
+    }
+    if(sum>s){
+        print(a);
         return;
     }
-    for(int i=1;i<=n;i++)
-    cout<<cal(a,i,i)<<endl;
+    int num=0;
+    while(s-num>=sum){
+        if((s-num-sum)%2==0){
+            cout<<-1<<endl;
+            return;
+        }
+        num+=3;
+    }
+        while(c0){
+            cout<<0<<" ";
+            c0--;
+        }
+        while(c2--){
+            cout<<2<<" ";
+        }
+        while(c1--){
+            cout<<1<<" ";
+        }
+        cout<<endl;
+    
+
 }
 
 int32_t main()

@@ -1,0 +1,1 @@
+{"name":"Local: 2130B","url":"e:\\Study\\Programs\\CP\\2130B.cpp","tests":[{"id":1753974037026,"input":"6\n3 2\n0 1 2\n3 3\n0 1 2\n3 6\n0 1 2\n3 4\n0 1 2\n3 10\n0 1 2\n5 1000\n2 0 1 1 2\n","output":"0 1 2 \r\n-1\r\n-1\r\n0 2 1 \r\n-1\r\n-1\r\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Study\\Programs\\CP\\2130B.cpp","group":"local","local":true}
